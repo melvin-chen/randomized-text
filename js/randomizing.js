@@ -12,7 +12,6 @@ function randomize() {
         }
         console.log("f: " + element);
     });
-    
-   console.log(finalString);
-   $('#place').append(finalString);
+    $('#place').empty();
+    $('#place').append(finalString);
 }
