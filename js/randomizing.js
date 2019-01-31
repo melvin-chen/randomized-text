@@ -10,8 +10,9 @@ function randomize() {
         else {
             finalString += element.toString();
         }
-        console.log("f: " + element);
+        //console.log("f: " + element);
     });
+    console.log($('#place').text());
     $('#place').empty();
     $('#place').append(finalString);
 }
