@@ -14,4 +14,5 @@ function randomize() {
     });
     
    console.log(finalString);
+   $('#place').append(finalString);
 }
