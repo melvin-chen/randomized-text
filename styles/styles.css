@@ -12,7 +12,7 @@ Container
     left: 15%; */
     margin: auto;
     width: 70vw;
-    height: 500px;
+    height: auto;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 40px #d8d8d8;
@@ -35,43 +35,12 @@ Container
 }
 
 /*********************
-Buttons
-*********************/
-
-.form__buttons {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 20px;
-}
-
-.form__buttons input {
-    border-radius: 3px;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #FED623;
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-input[type="button"] {
-    -webkit-transition: ease-out 0.3s;
-    -moz-transition: ease-out 0.3s;
-    transition: ease-out 0.3s;
-    outline: none;
-  }
-  
-  input[type="button"]:hover, input[type="button"]:focus {
-    box-shadow: inset 0 100px 0 0 #FF961A;
-  }
-
-/*********************
 Input Text
 *********************/
 
 input {
     border: none;
+    font-size: 16px;
 }
 
 input[type="text"] {
@@ -88,6 +57,39 @@ input[type="text"]:focus {
 }
 
 /*********************
+Buttons
+*********************/
+
+.form__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.form__buttons input {
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #258BFE;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+input[type="button"] {
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+    outline: none;
+  }
+  
+  input[type="button"]:hover, input[type="button"]:focus {
+    box-shadow: inset 0 100px 0 0 #13DB91;
+  }
+
+/*********************
 Output Text
 *********************/
 
@@ -101,4 +103,8 @@ Output Text
 .output p {
     padding: 0;
     margin: 0;
+    font-weight: bold;
+    word-wrap: break-word;
+
+    padding-bottom: 40px;
 }
