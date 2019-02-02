@@ -19,7 +19,7 @@ Container
     margin-top: 40px;
 }
 
-.container img {
+.container .image {
     display:block;
     width: 200px;
     margin: auto;
