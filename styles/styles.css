@@ -26,6 +26,10 @@ Container
     padding-top: 60px;
 }
 
+.image img{
+    width: 100%;
+}
+
 .container form {
     width: 300px;
     margin: auto;
