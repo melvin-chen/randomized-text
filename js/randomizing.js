@@ -4,20 +4,16 @@ function randomize() {
     var finalString = "";
     var upperCounter = 0;
     var lowerCounter = 0;
-    var flag = false; //true = upper, false = lower
     //abcdefghijk
     //aaaaaaaaaaa
 
     inputIntoArray.forEach(function(element) {
-        // console.log("UC: " + upperCounter + " LC: " + lowerCounter + " ele: " + element);
         if (Math.random() <= .5) {
-            //there are fewer than three upper case letters in a row
             if (upperCounter <= 2) {
                 lowerCounter = 0;
                 finalString += element.toString().toUpperCase();
                 upperCounter++;
             }
-            //there are more than three upper case letters in a row
             else {
                 finalString += element.toString().toLowerCase();
                 upperCounter = 0;
@@ -36,13 +32,7 @@ function randomize() {
                 upperCounter++;
             }
         }
-        //console.log("f: " + element);
     });
-    //console.log($('#place').text());
-    // $('#place').empty();
-    // finalString.split("").forEach(function(element) {
-    //     $('#place').append(element);
-    // })
     $('#place').empty();
     $('#place').append(finalString);
     console.log(finalString);
