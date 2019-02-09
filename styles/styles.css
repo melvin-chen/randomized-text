@@ -68,6 +68,7 @@ Buttons
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+    -webkit-appearance: none;
 }
 
 .form__buttons input {
