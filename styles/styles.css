@@ -68,7 +68,6 @@ Buttons
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
-    -webkit-appearance: none;
 }
 
 .form__buttons input {
@@ -88,6 +87,7 @@ input[type="button"] {
     -moz-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
     outline: none;
+    -webkit-appearance: none;
   }
   
   input[type="button"]:hover, input[type="button"]:focus {
