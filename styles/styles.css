@@ -112,3 +112,23 @@ Output Text
     word-wrap: break-word;
     padding-bottom: 40px;
 }
+
+#successText {
+    font-size: 12px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: white;
+    background: #305a32;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 1s;
+    position: fixed;
+    top: 10px;
+    width: 300px;
+    height: 45px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

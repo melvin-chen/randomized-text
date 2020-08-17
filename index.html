@@ -1,43 +1,48 @@
 <head>
-   <title>Randomized Text</title> 
-   <link rel="stylesheet" type="text/css" href="styles/styles.css">
-   <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
-   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-<link rel="manifest" href="img/favicons/site.webmanifest">
-<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <title>Randomized Text</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134130166-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134130166-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-134130166-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-134130166-1');
+    </script>
 
 </head>
 
 <body>
     <div class="container">
+
+        <div id="successText">copied!</div>
         <div class="image">
             <img src="img/logo@2x.svg">
         </div>
-    <form id="thisForm">
-        <input type="text" id="phrase" name="phrase" autocomplete="off">
-        <div class="form__buttons">
-            <input type="button" id="submitButton" onClick="randomize2()" value="submit">
-            <input type="button" id="copyButton" onClick="copy('#place')" value="copy text">
+        <form id="thisForm">
+            <input type="text" id="phrase" name="phrase" autofocus autocomplete="off">
+            <div class="form__buttons">
+                <input type="button" id="submitButton" onClick="randomize2()" value="submit">
+                <input type="button" id="copyButton" onClick="copy('#place')" value="copy text">
+            </div>
+        </form>
+        <div class="output">
+            <p id="place"></p>
+            <p id="copyConfirmation"></p>
         </div>
-    </form>
-    <div class="output">
-        <p id="place"></p>
-        <p id="copyConfirmation"></p>
-    </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
